@@ -23,7 +23,7 @@ $btnEnviar.addEventListener("click", async () => {
         method: "POST",
         body: formData,
     });
-    const respuesta = respuestaRaw.json();
+    const respuesta = await respuestaRaw.json();
     // Puedes manejar la respuesta como tú quieras
     console.log({ respuesta });
     // Finalmente limpiamos el campo
